@@ -45,17 +45,21 @@
 						<div class="inner">
 							<h1>Book Reviews</h1>
 							<p>After reading hundreds of books and making some well-received recommendations, I have decided to begin this review blog as a way to keep family, friends, and anyone else up-to-date on what I have been reading and what I consider worth reading.</p>
-							<h2>Rating System</h2>
-							<p>I am generally a very positive reviewer. I like to assume the approach that everything the author has done was intentional and give them the benefit of the doubt. But I also know I can't simply recommend everything I read so I needed a rating system that clearly defines any caveats I would provide in my recommendation of a book. I use Goodreads to keep track of the books I read, so I settled on a 5-star system to mirror my use of that platform. Ratings definitions are:</p>
-							<ol>
-								<li>I do not think the book has any redeeming qualities. Or if there are any, the negatives outweigh them so much it's not worth reading. Very rarely do I use this.</li>
-								<li>I can see some merit in the book and why some people might enjoy it, but I personally would recommend not wasting your time.</li>
-								<li>The book is enjoyable but nothing really stands out. Or I feel the book is a mixed bag with some sections that are pretty bad but other better sections that balance them out. My goal is for most books to land in this category, if it is of interest to you then go for it.</li>
-								<li>I really enjoyed the book and thought it a worthwhile read, but would hesitate to recommend it to persons of certain dispositions.</li>
-                                <li>One of my favorite books that I will be recommending to just about everyone.</li>
-							</ol>
-							<h2>Review Structure</h2>
-							<p>At the time of writing (late 2023) I will be starting with the books I am currently reading and working my way backward to catch up with what I've read in the past few years. In order to move more quickly, I will group all books in a series together for review. This also helps me to provide and overview of the series without spoilers that may pop up by reviewing later books in the series on an individual level. I will begin each review with a brief, 100% spoiler-free summary of my review. This will then be followed by more details on why I assigned the rating I gave and provide a little more details about the book and its themes. I will still try to keep this part spoiler free, but with a large series I may provide minor spoilers when I review specific books in the series. I want to be as up-front about this as possible in case people want to avoid that additional information.</p>
+							<h2 onclick="toggleRat()">Rating System</h2>
+							<div class="rating-content" id="rate" style="display:none;">
+								<p>I am generally a very positive reviewer. I like to assume the approach that everything the author has done was intentional and give them the benefit of the doubt. But I also know I can't simply recommend everything I read so I needed a rating system that clearly defines any caveats I would provide in my recommendation of a book. I use Goodreads to keep track of the books I read, so I settled on a 5-star system to mirror my use of that platform. Ratings definitions are:</p>
+								<ol>
+									<li>I do not think the book has any redeeming qualities. Or if there are any, the negatives outweigh them so much it's not worth reading. Very rarely do I use this.</li>
+									<li>I can see some merit in the book and why some people might enjoy it, but I personally would recommend not wasting your time.</li>
+									<li>The book is enjoyable but nothing really stands out. Or I feel the book is a mixed bag with some sections that are pretty bad but other better sections that balance them out. My goal is for most books to land in this category, if it is of interest to you then go for it.</li>
+									<li>I really enjoyed the book and thought it a worthwhile read, but would hesitate to recommend it to persons of certain dispositions.</li>
+                                	<li>One of my favorite books that I will be recommending to just about everyone.</li>
+								</ol>
+							</div>
+							<h2 onclick="toggleRevStruct()">Review Structure</h2>
+							<div class="rev-struct-content" id="struct" style="display:none;"></div>
+								<p>At the time of writing (late 2023) I will be starting with the books I am currently reading and working my way backward to catch up with what I've read in the past few years. In order to move more quickly, I will group all books in a series together for review. This also helps me to provide and overview of the series without spoilers that may pop up by reviewing later books in the series on an individual level. I will begin each review with a brief, 100% spoiler-free summary of my review. This will then be followed by more details on why I assigned the rating I gave and provide a little more details about the book and its themes. I will still try to keep this part spoiler free, but with a large series I may provide minor spoilers when I review specific books in the series. I want to be as up-front about this as possible in case people want to avoid that additional information.</p>
+							</div>
 						</div>
 					</div>
 
@@ -85,6 +89,26 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				function toggleRat() {
+				  var x = document.getElementById("rate");
+				  if (x.style.display === "none") {
+					x.style.display = "block";
+				  } else {
+					x.style.display = "none";
+				  }
+				}
+			  </script>
+			   <script>
+				function toggleRevStruct() {
+				  var x = document.getElementById("struct");
+				  if (x.style.display === "none") {
+					x.style.display = "block";
+				  } else {
+					x.style.display = "none";
+				  }
+				}
+			  </script>
 
 	</body>
 </html>
