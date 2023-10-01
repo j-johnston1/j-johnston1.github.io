@@ -2584,7 +2584,8 @@ input, select, textarea {
             -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
             transition: transform 0.5s ease, opacity 0.5s ease;
             position: relative;
-            width: calc(33.33333% - 2.5em);
+            width: 250px;
+			height: 500px;
             margin: 2.5em 0 0 2.5em;
         }
 
@@ -2596,6 +2597,8 @@ input, select, textarea {
                 position: relative;
                 display: block;
                 width: 100%;
+				height: 100%;
+				object-fit: cover;
                 border-radius: 4px;
                 overflow: hidden;
             }
@@ -2603,14 +2606,25 @@ input, select, textarea {
                 .tiles article > .image img {
                     display: block;
                     width: 100%;
+					height: 100%;
+					object-fit: contain;
+					transition: opacity 0.5s ease;
                 }
+
+				.tiles article > .image:hover img {
+					opacity: 0;
+				}
+
+				.tiles article > .image:hover {
+					background-image: url("/Users/jacobjohnston/Documents/GitHub/j-johnston1.github.io/images/pic05.jpg");
+				}
 
                 .tiles article > .image:before {
                     pointer-events: none;
-					-moz-transition: background-color 0.5s ease, opacity 0.5s ease;
-					-webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
-					-ms-transition: background-color 0.5s ease, opacity 0.5s ease;
-					transition: background-color 0.5s ease, opacity 0.5s ease;
+					-moz-transition: background-image 0.5s ease, opacity 0.5s ease;
+					-webkit-transition: background-image 0.5s ease, opacity 0.5s ease;
+					-ms-transition: background-image 0.5s ease, opacity 0.5s ease;
+					transition: background-image 0.5s ease, opacity 0.5s ease;
 					content: '';
 					display: block;
 					position: absolute;
@@ -2637,7 +2651,7 @@ input, select, textarea {
 					left: 0;
 					width: 100%;
 					height: 100%;
-                    background-image: none;
+                    background-image: url("/Users/jacobjohnston/Documents/GitHub/j-johnston1.github.io/images/pic05.jpg");
                     background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
@@ -2674,7 +2688,7 @@ input, select, textarea {
                 padding: 1em;
                 border-radius: 4px;
                 border-bottom: 0;
-                color: #ffffff;
+                color: transparent;
                 text-align: center;
                 text-decoration: none;
                 z-index: 3;
@@ -2685,7 +2699,9 @@ input, select, textarea {
                 }
 
                 .tiles article > a:hover {
-                    color: #ffffff !important;
+                    color: black !important;
+					-webkit-text-stroke-width: 1px;
+					-webkit-text-stroke-color: whitesmoke;
                 }
 
                 .tiles article > a h2 {
@@ -2708,11 +2724,6 @@ input, select, textarea {
                         margin-bottom: 0;
                     }
 
-
-            .tiles article.loveTimeCholera > .image:before {
-                background-image: "images/LoveInTheTimeOfCholera.jpg";
-            }
-
             body:not(.is-touch) .tiles article:hover > .image {
                 -moz-transform: scale(1.1);
                 -webkit-transform: scale(1.1);
@@ -2721,13 +2732,13 @@ input, select, textarea {
             }
 
                 body:not(.is-touch) .tiles article:hover > .image:before {
-                    opacity: 0.35;
+                    opacity: 0.10;
                 }
 
                 body:not(.is-touch) .tiles article:hover > .image:after {
                     content: '';
-					opacity: 0.85;
-					background-image: "images/pic05.jpg";
+					opacity: 0.90;
+					background-image: url("/Users/jacobjohnston/Documents/GitHub/j-johnston1.github.io/images/pic05.jpg");
                 }
 
             body:not(.is-touch) .tiles article:hover .content {
