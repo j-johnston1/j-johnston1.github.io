@@ -2710,7 +2710,7 @@ input, select, textarea {
 
 
             .tiles article.loveTimeCholera > .image:before {
-                background-image: url("images/LoveInTheTimeOfCholera.jpg");
+                background-image: "images/LoveInTheTimeOfCholera.jpg";
             }
 
             body:not(.is-touch) .tiles article:hover > .image {
@@ -2726,8 +2726,8 @@ input, select, textarea {
 
                 body:not(.is-touch) .tiles article:hover > .image:after {
                     content: '';
-					opacity: 1;
-					background-image: url("images/pic05.jpg");
+					opacity: 0.85;
+					background-image: "images/pic05.jpg";
                 }
 
             body:not(.is-touch) .tiles article:hover .content {
