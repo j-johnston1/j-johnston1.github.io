@@ -2730,6 +2730,10 @@ input, select, textarea {
 				background-color: #8499e7;
 			}
 
+			.tiles article.loveTimeCholera > .image:before {
+				background-image: url("images/LoveInTheTimeOfCholera.jpg");
+			}
+
 			body:not(.is-touch) .tiles article:hover > .image {
 				-moz-transform: scale(1.1);
 				-webkit-transform: scale(1.1);
