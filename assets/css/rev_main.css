@@ -2616,7 +2616,7 @@ input, select, textarea {
 				}
 
 				.tiles article > .image:hover {
-					background-image: url("https://github.com/j-johnston1/j-johnston1.github.io/blob/main/images/pic05.jpg");
+					background-image: url("/images/pic05.jpg");
 				}
 
                 .tiles article > .image:before {
@@ -2651,7 +2651,7 @@ input, select, textarea {
 					left: 0;
 					width: 100%;
 					height: 100%;
-                    background-image: url("https://github.com/j-johnston1/j-johnston1.github.io/blob/main/images/pic05.jpg");
+                    background-image: url("/images/pic05.jpg");
                     background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
@@ -2738,7 +2738,7 @@ input, select, textarea {
                 body:not(.is-touch) .tiles article:hover > .image:after {
                     content: '';
 					opacity: 0.90;
-					background-image: url("https://github.com/j-johnston1/j-johnston1.github.io/blob/main/images/pic05.jpg");
+					background-image: url("/images/pic05.jpg");
                 }
 
             body:not(.is-touch) .tiles article:hover .content {
